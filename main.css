@@ -1,0 +1,201 @@
+#canvas{
+  border:2px solid red;
+  width:1000px;
+  height:10000px;
+  margin:0 auto;
+  position:relative;
+}
+
+#counter{
+  color:white;
+  width:200px;
+  height:30px;
+  top:123px;
+  left:90px;
+  position:absolute;
+  z-index:-1;
+  opacity:0.9;
+}
+
+
+#icon {width:97px;
+  height: 277px
+  border:1px solid black;
+  position:absolute;
+  top:200px;
+  left:45%;
+}
+
+
+#message1 {top:600px;
+         left:-195px;}
+
+#message2 {top:50px;
+         right:5px;}
+
+#message3 {top:1000px;
+          right:-195px;}
+
+#message1.slider{height:100px;
+         width:190px;
+         position:absolute;
+
+         transition:left .5s;}
+
+#planets {
+width:190px;
+height:100px;
+margin-top:1500px;
+width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation: mymove infinite;
+    animation-duration: 1s;}
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+#jupiter {
+margin-top:900px;
+margin-left:500px;
+animation-name: example;
+}
+
+#mars {
+margin-left:500px;
+animation-name: example;
+}
+
+#earth {
+margin-top:500px;
+animation-name: example;
+}
+
+#venus {
+margin-left:500px;
+margin-top: 300px;}
+
+#mercury {
+margin-top:200px;}
+
+#sun {
+margin-top:1000px;
+margin-left:200px;
+width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation: mymove infinite;
+    animation-duration: 1s;}
+
+#star4 {margin-left:300px;
+margin-top:200px;}
+
+#star5 {margin-top: 100px;}
+
+#star6 {margin-left:200px;
+margin-top:0px;}
+
+
+
+    /* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+.slider{height:100px;
+        width:500px;
+        position:absolute;
+      
+        transition:right .5s;}
+
+
+
+        @keyframes move-twink-back {
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
+  }
+  @-webkit-keyframes move-twink-back {
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
+  }
+  @-moz-keyframes move-twink-back {
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
+  }
+  @-ms-keyframes move-twink-back {
+      from {background-position:0 0;}
+      to {background-position:-10000px 5000px;}
+  }
+
+  @keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-webkit-keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-moz-keyframes move-clouds-back {
+      from {background-position:0 0;}
+      to {background-position:10000px 0;}
+  }
+  @-ms-keyframes move-clouds-back {
+      from {background-position: 0;}
+      to {background-position:10000px 0;}
+  }
+
+  .stars, .twinkling, .clouds {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:1000px;
+    height:10000px;
+    display:block;
+  }
+
+  .stars {
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index:0;
+  }
+
+  .twinkling{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index:1;
+
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation:move-twink-back 200s linear infinite;
+  }
+
+  .clouds{
+      background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+      z-index:3;
+
+    -moz-animation:move-clouds-back 200s linear infinite;
+    -ms-animation:move-clouds-back 200s linear infinite;
+    -o-animation:move-clouds-back 200s linear infinite;
+    -webkit-animation:move-clouds-back 200s linear infinite;
+    animation:move-clouds-back 200s linear infinite;
+  }
